@@ -1,0 +1,42 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" role="img">
+  <title>ColisScan app icon</title>
+  <desc>Dark rounded-square icon with a teal package outline and scanner viewfinder corners</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#131920"/>
+      <stop offset="100%" stop-color="#0a0e14"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#00ffcc"/>
+      <stop offset="100%" stop-color="#00a888"/>
+    </linearGradient>
+  </defs>
+
+  <!-- background -->
+  <rect x="0" y="0" width="512" height="512" rx="112" fill="url(#bg)"/>
+
+  <!-- package box -->
+  <g stroke="url(#accent)" stroke-width="12" stroke-linejoin="round" stroke-linecap="round" fill="none">
+    <path d="M256 148 L360 200 L360 312 L256 364 L152 312 L152 200 Z"/>
+    <path d="M152 200 L256 252 L360 200"/>
+    <path d="M256 252 L256 364"/>
+  </g>
+
+  <!-- box seam accents -->
+  <path d="M204 174 L204 226" stroke="#00d4aa" stroke-width="7" stroke-linecap="round" opacity="0.55"/>
+  <path d="M308 174 L308 226" stroke="#00d4aa" stroke-width="7" stroke-linecap="round" opacity="0.55"/>
+
+  <!-- scan line -->
+  <line x1="140" y1="256" x2="372" y2="256" stroke="#00ffcc" stroke-width="6" stroke-linecap="round">
+    <animate attributeName="opacity" values="0.3;1;0.3" dur="2.4s" repeatCount="indefinite"/>
+  </line>
+
+  <!-- viewfinder corners -->
+  <g stroke="#00d4aa" stroke-width="14" stroke-linecap="round" fill="none">
+    <path d="M108 152 L108 108 L152 108"/>
+    <path d="M404 108 L448 108 L448 152"/>
+    <path d="M448 360 L448 404 L404 404"/>
+    <path d="M108 404 L108 360"/>
+    <path d="M108 404 L152 404"/>
+  </g>
+</svg>
